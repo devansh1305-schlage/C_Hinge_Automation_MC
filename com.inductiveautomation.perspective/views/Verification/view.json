@@ -1332,7 +1332,7 @@
           "style": {
             "classes": "Color/Primary"
           },
-          "text": "System Mode",
+          "text": "Select System Mode",
           "textStyle": {
             "classes": "Paddings/PaddingLeft Text/CategoryHeader",
             "fontSize": 40
