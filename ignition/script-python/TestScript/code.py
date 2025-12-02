@@ -7,6 +7,7 @@ client = system.net.httpClient()
 
 def handleTagChange(tag_value, description_tag_path):
     """Main function to handle tag changes and route to appropriate API calls"""
+    """New change for testing git module"""
     logger.info("=== handleTagChange START ===")
     
     try:
