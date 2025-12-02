@@ -1,0 +1,1403 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1080,
+      "width": 1920
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "boxFailNest"
+        },
+        "position": {
+          "height": 150,
+          "width": 242,
+          "x": 1451.8,
+          "y": 511.878
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FF9797"
+          },
+          "text": "BAD",
+          "textStyle": {
+            "color": "#7C0000",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "paddingBottom": 95
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "boxFailEPT"
+        },
+        "position": {
+          "height": 150,
+          "width": 242,
+          "x": 1202.83,
+          "y": 511.944
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "expression": "if({../lblCAMEPT.props.text}!\u003d{[default]PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/EPTLoc.value},TRUE,FALSE)"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FF9797"
+          },
+          "text": "BAD",
+          "textStyle": {
+            "color": "#7C0000",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "paddingBottom": 95
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "boxFailFinish"
+        },
+        "position": {
+          "height": 150,
+          "width": 242,
+          "x": 952.835,
+          "y": 511.98
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "expression": "if({../lblCAMFinish.props.text}!\u003d{[default]PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Finish.value},TRUE,FALSE)"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FF9797"
+          },
+          "text": "BAD",
+          "textStyle": {
+            "color": "#7C0000",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "paddingBottom": 95
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "boxFailModel"
+        },
+        "position": {
+          "height": 150,
+          "width": 242,
+          "x": 456.837,
+          "y": 511.99
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "expression": "if({../lblCAMModel.props.text}!\u003d{[default]PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Model.value},TRUE,FALSE)"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FF9797"
+          },
+          "text": "BAD",
+          "textStyle": {
+            "color": "#7C0000",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "paddingBottom": 95
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "boxFailHanding"
+        },
+        "position": {
+          "height": 150,
+          "width": 242,
+          "x": 704.91,
+          "y": 512
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "expression": "if({../lblCAMHanding.props.text}!\u003d{[default]PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Handing.value},TRUE,FALSE)"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FF9797"
+          },
+          "text": "BAD",
+          "textStyle": {
+            "color": "#7C0000",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "paddingBottom": 95
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 55,
+          "width": 426,
+          "x": 15,
+          "y": 211.5
+        },
+        "props": {
+          "style": {
+            "classes": "Color/Primary"
+          },
+          "text": "Current Description",
+          "textStyle": {
+            "classes": "Paddings/PaddingLeft Text/CategoryHeader",
+            "fontSize": 40
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "lblDescription"
+        },
+        "position": {
+          "height": 50,
+          "width": 1456,
+          "x": 456.93,
+          "y": 214.02
+        },
+        "props": {
+          "text": "224XY 95\" RH US28 TWP CON",
+          "textStyle": {
+            "fontSize": 30
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_1"
+        },
+        "position": {
+          "height": 168,
+          "width": 426,
+          "x": 14.98,
+          "y": 277
+        },
+        "props": {
+          "style": {
+            "classes": "Color/Primary"
+          },
+          "text": "Part Information",
+          "textStyle": {
+            "classes": "Paddings/PaddingLeft Text/CategoryHeader",
+            "fontSize": 40
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_2"
+        },
+        "position": {
+          "height": 50,
+          "width": 231,
+          "x": 1438.23,
+          "y": 287.016
+        },
+        "props": {
+          "text": "Length",
+          "textStyle": {
+            "classes": "Color/Secondary",
+            "fontSize": 30,
+            "fontWeight": "bold"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_3"
+        },
+        "position": {
+          "height": 50,
+          "width": 231,
+          "x": 456.944,
+          "y": 288.501
+        },
+        "props": {
+          "text": "Model",
+          "textStyle": {
+            "classes": "Color/Secondary",
+            "fontSize": 30,
+            "fontWeight": "bold"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_4"
+        },
+        "position": {
+          "height": 50,
+          "width": 231,
+          "x": 943.516,
+          "y": 287.018
+        },
+        "props": {
+          "text": "Finish",
+          "textStyle": {
+            "classes": "Color/Secondary",
+            "fontSize": 30,
+            "fontWeight": "bold"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_5"
+        },
+        "position": {
+          "height": 50,
+          "width": 231,
+          "x": 1190.52,
+          "y": 287.015
+        },
+        "props": {
+          "text": "EPT Loc",
+          "textStyle": {
+            "classes": "Color/Secondary",
+            "fontSize": 30,
+            "fontWeight": "bold"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_6"
+        },
+        "position": {
+          "height": 50,
+          "width": 231,
+          "x": 698.809,
+          "y": 287.058
+        },
+        "props": {
+          "text": "Handing",
+          "textStyle": {
+            "classes": "Color/Secondary",
+            "fontSize": 30,
+            "fontWeight": "bold"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "lblWIPModel"
+        },
+        "position": {
+          "height": 32,
+          "width": 204,
+          "x": 470,
+          "y": 345
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Model"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "lblWIPLength"
+        },
+        "position": {
+          "height": 32,
+          "width": 204,
+          "x": 1451.07,
+          "y": 343.516
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Length"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "lblWIPHanding"
+        },
+        "position": {
+          "height": 32,
+          "width": 204,
+          "x": 711.646,
+          "y": 343.573
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "text": "RH",
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "lblWIPFinish"
+        },
+        "position": {
+          "height": 33,
+          "width": 204,
+          "x": 956.646,
+          "y": 343.573
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Finish"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "lblWIPEPT"
+        },
+        "position": {
+          "height": 32,
+          "width": 204,
+          "x": 1203.65,
+          "y": 343.573
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/EPTLoc"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\tif self.props.image.icon.path \u003d\u003d \u0027material/edit\u0027:\n\t\tself.props.image.icon.path \u003d \u0027material/save\u0027\n\t\tself.getSibling(\"drpModel\").meta.visible \u003d 1\n\telse:\n\t\tsystem.tag.writeBlocking([\"PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Model\"],[self.getSibling(\"drpModel\").props.value])\n\t\tself.getSibling(\"drpModel\").meta.visible \u003d 0\n\t\tself.props.image.icon.path \u003d \u0027material/edit\u0027"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "btnEditModel"
+        },
+        "position": {
+          "height": 44,
+          "width": 50,
+          "x": 637.76,
+          "y": 338.49
+        },
+        "props": {
+          "image": {
+            "icon": {
+              "path": "material/edit"
+            }
+          },
+          "style": {
+            "classes": "Color/Primary",
+            "fontSize": 25
+          },
+          "text": ""
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "Label_7"
+        },
+        "position": {
+          "height": 193,
+          "width": 426,
+          "x": 15.0217,
+          "y": 556
+        },
+        "props": {
+          "style": {
+            "classes": "Color/Primary"
+          },
+          "text": "Camera Results",
+          "textStyle": {
+            "classes": "Paddings/PaddingLeft Text/CategoryHeader",
+            "fontSize": 40
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "lblCAMModel"
+        },
+        "position": {
+          "height": 32,
+          "width": 204,
+          "x": 475.822,
+          "y": 618.48
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "text": "224XY",
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_8"
+        },
+        "position": {
+          "height": 50,
+          "width": 231,
+          "x": 461.992,
+          "y": 560.5
+        },
+        "props": {
+          "text": "Model",
+          "textStyle": {
+            "classes": "Color/Secondary",
+            "fontSize": 30,
+            "fontWeight": "bold"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "lblCAMHanding"
+        },
+        "position": {
+          "height": 32,
+          "width": 204,
+          "x": 722.534,
+          "y": 620.053
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "text": "RH",
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_9"
+        },
+        "position": {
+          "height": 50,
+          "width": 231,
+          "x": 709.274,
+          "y": 561.613
+        },
+        "props": {
+          "text": "Handing",
+          "textStyle": {
+            "classes": "Color/Secondary",
+            "fontSize": 30,
+            "fontWeight": "bold"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "lblCAMFinish"
+        },
+        "position": {
+          "height": 33,
+          "width": 204,
+          "x": 967.255,
+          "y": 619.493
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "text": "US28",
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_10"
+        },
+        "position": {
+          "height": 50,
+          "width": 231,
+          "x": 953.984,
+          "y": 561.573
+        },
+        "props": {
+          "text": "Finish",
+          "textStyle": {
+            "classes": "Color/Secondary",
+            "fontSize": 30,
+            "fontWeight": "bold"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "lblPassFail"
+        },
+        "position": {
+          "height": 75,
+          "width": 1167,
+          "x": 496.88,
+          "y": 674
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#00DE0F"
+          },
+          "text": "PASS",
+          "textStyle": {
+            "fontSize": 60,
+            "fontWeight": "bold",
+            "letterSpacing": "10",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_11"
+        },
+        "position": {
+          "height": 50,
+          "width": 231,
+          "x": 1206.98,
+          "y": 561.57
+        },
+        "props": {
+          "text": "EPT Loc",
+          "textStyle": {
+            "classes": "Color/Secondary",
+            "fontSize": 30,
+            "fontWeight": "bold"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "lblCAMEPT"
+        },
+        "position": {
+          "height": 33,
+          "width": 204,
+          "x": 1220.26,
+          "y": 619.49
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "text": "100\"",
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "drpModel",
+          "visible": 0
+        },
+        "position": {
+          "height": 36,
+          "width": 163,
+          "x": 470,
+          "y": 345
+        },
+        "props": {
+          "options": [
+            {
+              "label": "224XY",
+              "value": "224XY"
+            },
+            {
+              "label": "112XY",
+              "value": "112XY"
+            }
+          ],
+          "search": {
+            "enabled": false
+          },
+          "style": {
+            "fontSize": 28
+          },
+          "value": "224XY"
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\tif self.props.image.icon.path \u003d\u003d \u0027material/edit\u0027:\n\t\tself.props.image.icon.path \u003d \u0027material/save\u0027\n\t\tself.getSibling(\"numLength\").meta.visible \u003d 1\n\telse:\n\t\tlengthString \u003d str(self.getSibling(\"numLength\").props.value) + \u0027\"\u0027\n\t\tsystem.tag.writeBlocking([\"PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Length\"],[lengthString])\n\t\tself.getSibling(\"numLength\").meta.visible \u003d 0\n\t\tself.props.image.icon.path \u003d \u0027material/edit\u0027"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "btnEditLength"
+        },
+        "position": {
+          "height": 44,
+          "width": 50,
+          "x": 1615.34,
+          "y": 337
+        },
+        "props": {
+          "image": {
+            "icon": {
+              "path": "material/edit"
+            }
+          },
+          "style": {
+            "classes": "Color/Primary",
+            "fontSize": 25
+          },
+          "text": ""
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "numLength",
+          "visible": 0
+        },
+        "position": {
+          "height": 32,
+          "width": 150,
+          "x": 1451.07,
+          "y": 343.516
+        },
+        "props": {
+          "align": "left",
+          "inputBounds": {
+            "maximum": 200,
+            "minimum": 0
+          },
+          "spinner": {
+            "enabled": false
+          },
+          "style": {
+            "fontSize": 28
+          },
+          "tooltipText": "Numbers only please",
+          "value": 100
+        },
+        "type": "ia.input.numeric-entry-field"
+      },
+      {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\tif self.props.image.icon.path \u003d\u003d \u0027material/edit\u0027:\n\t\tself.props.image.icon.path \u003d \u0027material/save\u0027\n\t\tself.getSibling(\"numLength\").meta.visible \u003d 1\n\telse:\n\t\tlengthString \u003d str(self.getSibling(\"numLength\").props.value) + \u0027\"\u0027\n\t\tsystem.tag.writeBlocking([\"PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Length\"],[lengthString])\n\t\tself.getSibling(\"numLength\").meta.visible \u003d 0\n\t\tself.props.image.icon.path \u003d \u0027material/edit\u0027"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "btnSetTigerstop"
+        },
+        "position": {
+          "height": 44,
+          "width": 202,
+          "x": 1204.7,
+          "y": 390.967
+        },
+        "props": {
+          "style": {
+            "classes": "Color/Primary",
+            "fontSize": 25
+          },
+          "text": "SET TIGERSTOP"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\tif self.props.image.icon.path \u003d\u003d \u0027material/edit\u0027:\n\t\tself.props.image.icon.path \u003d \u0027material/save\u0027\n\t\tself.getSibling(\"drpHanding\").meta.visible \u003d 1\n\telse:\n\t\tsystem.tag.writeBlocking([\"PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Handing\"],[self.getSibling(\"drpHanding\").props.value])\n\t\tself.getSibling(\"drpHanding\").meta.visible \u003d 0\n\t\tself.props.image.icon.path \u003d \u0027material/edit\u0027"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "btnEditHanding"
+        },
+        "position": {
+          "height": 44,
+          "width": 50,
+          "x": 875.066,
+          "y": 337.507
+        },
+        "props": {
+          "image": {
+            "icon": {
+              "path": "material/edit"
+            }
+          },
+          "style": {
+            "classes": "Color/Primary",
+            "fontSize": 25
+          },
+          "text": ""
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "drpHanding",
+          "visible": 0
+        },
+        "position": {
+          "height": 36,
+          "width": 151,
+          "x": 711.646,
+          "y": 343.573
+        },
+        "propConfig": {
+          "props.placeholder.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Handing"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "options": [
+            {
+              "label": "RH",
+              "value": "RH"
+            },
+            {
+              "label": "LH",
+              "value": "LH"
+            }
+          ],
+          "placeholder": {},
+          "search": {
+            "enabled": false
+          },
+          "style": {
+            "fontSize": 28
+          },
+          "value": "RH"
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "meta": {
+          "name": "drpFinish",
+          "visible": 0
+        },
+        "position": {
+          "height": 36,
+          "width": 163,
+          "x": 956.646,
+          "y": 343.573
+        },
+        "propConfig": {
+          "props.placeholder.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Finish"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "options": [
+            {
+              "label": "US28",
+              "value": "US28"
+            },
+            {
+              "label": "313AN",
+              "value": "313AN"
+            },
+            {
+              "label": "315AN",
+              "value": "315AN"
+            }
+          ],
+          "placeholder": {},
+          "search": {
+            "enabled": false
+          },
+          "style": {
+            "fontSize": 28
+          },
+          "value": "US28"
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\tif self.props.image.icon.path \u003d\u003d \u0027material/edit\u0027:\n\t\tself.props.image.icon.path \u003d \u0027material/save\u0027\n\t\tself.getSibling(\"drpFinish\").meta.visible \u003d 1\n\telse:\n\t\tsystem.tag.writeBlocking([\"PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/Finish\"],[self.getSibling(\"drpFinish\").props.value])\n\t\tself.getSibling(\"drpFinish\").meta.visible \u003d 0\n\t\tself.props.image.icon.path \u003d \u0027material/edit\u0027"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "btnEditFinish"
+        },
+        "position": {
+          "height": 44,
+          "width": 50,
+          "x": 1124.78,
+          "y": 337.457
+        },
+        "props": {
+          "image": {
+            "icon": {
+              "path": "material/edit"
+            }
+          },
+          "style": {
+            "classes": "Color/Primary",
+            "fontSize": 25
+          },
+          "text": ""
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\tif self.props.image.icon.path \u003d\u003d \u0027material/edit\u0027:\n\t\tself.props.image.icon.path \u003d \u0027material/save\u0027\n\t\tself.getSibling(\"numEPTLoc\").meta.visible \u003d 1\n\telse:\n\t\tlengthString \u003d str(self.getSibling(\"numEPTLoc\").props.value) + \u0027\"\u0027\n\t\tsystem.tag.writeBlocking([\"PTQ/MTC/C_HINGE_ASSY_MC/Parsed Data/EPTLoc\"],[lengthString])\n\t\tself.getSibling(\"numEPTLoc\").meta.visible \u003d 0\n\t\tself.props.image.icon.path \u003d \u0027material/edit\u0027"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "btnEditEPT"
+        },
+        "position": {
+          "height": 44,
+          "width": 50,
+          "x": 1371.62,
+          "y": 337.43
+        },
+        "props": {
+          "image": {
+            "icon": {
+              "path": "material/edit"
+            }
+          },
+          "style": {
+            "classes": "Color/Primary",
+            "fontSize": 25
+          },
+          "text": ""
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "numEPTLoc",
+          "visible": 0
+        },
+        "position": {
+          "height": 32,
+          "width": 150,
+          "x": 1203.65,
+          "y": 343.573
+        },
+        "props": {
+          "align": "left",
+          "inputBounds": {
+            "maximum": 200,
+            "minimum": 1
+          },
+          "spinner": {
+            "enabled": false
+          },
+          "style": {
+            "fontSize": 28
+          },
+          "tooltipText": "Numbers only please",
+          "value": 100
+        },
+        "type": "ia.input.numeric-entry-field"
+      },
+      {
+        "meta": {
+          "name": "lblCAMEPT_0"
+        },
+        "position": {
+          "height": 33,
+          "width": 204,
+          "x": 1471.26,
+          "y": 620.49
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "text": 1,
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_12"
+        },
+        "position": {
+          "height": 50,
+          "width": 231,
+          "x": 1457.98,
+          "y": 562.57
+        },
+        "props": {
+          "text": "Nest",
+          "textStyle": {
+            "classes": "Color/Secondary",
+            "fontSize": 30,
+            "fontWeight": "bold"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_13"
+        },
+        "position": {
+          "height": 65,
+          "width": 426,
+          "x": 14.96956298828125,
+          "y": 986.942626953125
+        },
+        "props": {
+          "style": {
+            "classes": "Color/Primary"
+          },
+          "text": "System Status",
+          "textStyle": {
+            "classes": "Paddings/PaddingLeft Text/CategoryHeader",
+            "fontSize": 40
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "stsPLC"
+        },
+        "position": {
+          "height": 45,
+          "width": 45,
+          "x": 456.823,
+          "y": 997
+        },
+        "props": {
+          "color": "#00DE0F",
+          "path": "material/check_circle"
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "Icon_0"
+        },
+        "position": {
+          "height": 30,
+          "width": 30,
+          "x": 1748.77,
+          "y": 1004.9305
+        },
+        "props": {
+          "color": "#FF0000",
+          "path": "material/report"
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "lblCAMModel_0"
+        },
+        "position": {
+          "height": 32,
+          "width": 194,
+          "x": 501.4,
+          "y": 1002
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "text": "PLC Connection",
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "lblCAMModel_1"
+        },
+        "position": {
+          "height": 32,
+          "width": 239,
+          "x": 805.43,
+          "y": 1002
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "text": "Camera Connection",
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "stsCAM"
+        },
+        "position": {
+          "height": 45,
+          "width": 45,
+          "x": 760.854,
+          "y": 997
+        },
+        "props": {
+          "color": "#00DE0F",
+          "path": "material/check_circle"
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "lblCAMModel_2"
+        },
+        "position": {
+          "height": 32,
+          "width": 322,
+          "x": 1149.14,
+          "y": 1002
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "text": "Pack to Quality Connection",
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "stsPTQ"
+        },
+        "position": {
+          "height": 45,
+          "width": 45,
+          "x": 1104.56,
+          "y": 997
+        },
+        "props": {
+          "color": "#00DE0F",
+          "path": "material/check_circle"
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "lblCAMModel_3"
+        },
+        "position": {
+          "height": 32,
+          "width": 272,
+          "x": 1445.14,
+          "y": 1006
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFFF00"
+          },
+          "text": "Tigerstop Connection",
+          "textStyle": {
+            "fontSize": 28,
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "stsTS"
+        },
+        "position": {
+          "height": 45,
+          "width": 45,
+          "x": 1400.56,
+          "y": 1001
+        },
+        "props": {
+          "color": "#00DE0F",
+          "path": "material/check_circle"
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "Label_14"
+        },
+        "position": {
+          "height": 55,
+          "width": 426,
+          "x": 14.97,
+          "y": 8.940000000000055
+        },
+        "props": {
+          "style": {
+            "classes": "Color/Primary"
+          },
+          "text": "System Mode",
+          "textStyle": {
+            "classes": "Paddings/PaddingLeft Text/CategoryHeader",
+            "fontSize": 40
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Dropdown",
+          "tooltip": {
+            "text": "KEY SELECTOR SWITCH IN BYPASS MODE. Switch to AUTO mode to allow selection here."
+          }
+        },
+        "position": {
+          "height": 50,
+          "width": 1440,
+          "x": 451.25,
+          "y": 11.4375
+        },
+        "propConfig": {
+          "meta.tooltip.enabled": {
+            "binding": {
+              "config": {
+                "path": "this.props.enabled"
+              },
+              "transforms": [
+                {
+                  "expression": "!{value}",
+                  "type": "expression"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "options": [
+            {
+              "label": "Manual Op Mode: Press operates as normal",
+              "value": 0
+            },
+            {
+              "label": "Manual Verify Mode: Trigger camera with button, verify manually, then operate press",
+              "value": 1
+            },
+            {
+              "label": "Auto Verify Mode: Trigger camera by operating press, system will compare to Pack to Quality and press will operate if part matches",
+              "value": 2
+            }
+          ],
+          "search": {
+            "enabled": false
+          },
+          "style": {
+            "fontSize": 28
+          },
+          "value": 2
+        },
+        "type": "ia.input.dropdown"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

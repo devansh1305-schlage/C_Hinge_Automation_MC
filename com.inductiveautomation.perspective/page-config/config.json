@@ -1,0 +1,11 @@
+{
+  "pages": {
+    "/": {
+      "title": "C-Hinge Verification System",
+      "viewPath": "Verification"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "custom": {
+    "badge": "20003057",
+    "badgeNumber": "20027510",
+    "dbConn": "SparkDB",
+    "projectName": "Core",
+    "refreshRateSec": 30,
+    "sessionMessageCriteriaList": [
+      {
+        "AttributeName": "Location ID",
+        "AttributeValue": 54
+      },
+      {
+        "AttributeName": "User",
+        "AttributeValue": "choitenga"
+      },
+      {
+        "AttributeName": "Kanban Number",
+        "AttributeValue": 19322
+      }
+    ],
+    "timeRange": {
+      "interval": "hour",
+      "number": 8
+    },
+    "windowSize": "small"
+  },
+  "propConfig": {
+    "custom.userLocationID": {
+      "binding": {
+        "config": {
+          "parameters": {
+            "database": "{this.custom.dbConn}",
+            "hostname": "{this.props.host}",
+            "ip": "{this.props.address}"
+          },
+          "queryPath": "AllegionWorkstation/GetLocationIDFromIP"
+        },
+        "type": "query"
+      }
+    },
+    "custom.username": {
+      "binding": {
+        "config": {
+          "struct": {
+            "userLocation": "{this.custom.userLocationID}",
+            "username": "{this.props.auth.user.userName}"
+          },
+          "waitOnAll": true
+        },
+        "transforms": [
+          {
+            "code": "\n\tlid \u003d value.userLocation\n\tbaseTagPath \u003d shared.OEE.reporting.getLocationPath(lid)\n\ttagPath \u003d \u0027[default]OEE/\u0027 + baseTagPath + \u0027/Username\u0027\n#\tsystem.perspective.print(tagPath)\n\tsystem.tag.writeBlocking(tagPath, value.username)\t\n\treturn value.username",
+            "type": "script"
+          }
+        ],
+        "type": "expr-struct"
+      }
+    },
+    "props.auth": {
+      "access": "PRIVATE",
+      "persistent": false
+    },
+    "props.device.accelerometer": {
+      "access": "SYSTEM",
+      "persistent": false
+    },
+    "props.device.identifier": {
+      "access": "SYSTEM",
+      "persistent": false
+    },
+    "props.device.timezone": {
+      "access": "SYSTEM",
+      "persistent": false
+    },
+    "props.device.type": {
+      "access": "SYSTEM",
+      "persistent": false
+    },
+    "props.device.userAgent": {
+      "access": "SYSTEM",
+      "persistent": false
+    },
+    "props.gateway": {
+      "access": "SYSTEM",
+      "persistent": false
+    },
+    "props.geolocation.data": {
+      "access": "SYSTEM",
+      "persistent": false
+    },
+    "props.geolocation.permissionGranted": {
+      "access": "SYSTEM",
+      "persistent": false
+    },
+    "props.host": {
+      "access": "SYSTEM",
+      "persistent": false
+    },
+    "props.id": {
+      "access": "SYSTEM",
+      "persistent": false
+    },
+    "props.lastActivity": {
+      "access": "SYSTEM",
+      "persistent": false
+    }
+  },
+  "props": {
+    "address": "10.101.200.54",
+    "device": {},
+    "geolocation": {},
+    "locale": "en-US",
+    "timeZoneId": "America/New_York"
+  }
+}

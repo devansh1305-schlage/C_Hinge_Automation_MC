@@ -1,0 +1,16 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "data.bin"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "dpanirwala",
+      "timestamp": "2025-08-07T16:50:07Z"
+    },
+    "lastModificationSignature": "8f4e17bb303778cf754cccd80844c8c89d672c0c0325aeeca50b3bb594c9d1d8"
+  }
+}

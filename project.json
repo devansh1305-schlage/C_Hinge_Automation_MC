@@ -1,0 +1,7 @@
+{
+  "title": "C_Hinge_Automation_MC",
+  "description": "Mount Comfort C_Hinge_Automation_MC for resource groups: IND400CH, IND400CH2 and INDD400CH2",
+  "parent": "Core",
+  "enabled": true,
+  "inheritable": false
+}
